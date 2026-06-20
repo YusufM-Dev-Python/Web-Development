@@ -12,6 +12,10 @@ This repository tracks my progress as I learn full-stack web development. I am d
   * 📄 `movie_ranking.html` (Top 3 film listing using structural headers)
   * 📄 `birthday_invite.html` (Event invitation using lists, images, and anchor links)
 
+* `/02-HTML-Capstone` - Final project for HTML fundamentals.
+  * 📄 `index.html` (Personal resume website)
+  * 📄 `contact.html` & `hobbies.html` (Multi-page navigation)
+
 ## 🚀 How to View
 To view any of these projects locally:
 1. Clone this repository or download the ZIP file.
