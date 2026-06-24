@@ -17,6 +17,9 @@ Click on any of the projects below to view the live websites:
 * `/02-HTML-Capstone` - Final project for HTML fundamentals.
   * 📄 [My Live Resume Website](https://yusufm-dev-python.github.io/Web-Development/02-HTML-Capstone/) (Personal resume with multi-page navigation)
 
+* `/03-CSS-Basics` - Introduction to styling.
+  * 📄 [CSS Intro Project](https://yusufm-dev-python.github.io/Web-Development/03-CSS-Basics/css_intro.html) (Demonstrating inline, internal, and external CSS methods)
+
 ## 🚀 How to View Locally
 If you want to run these projects on your own machine instead of viewing the live links:
 1. Clone this repository or download the ZIP file.
