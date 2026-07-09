@@ -20,6 +20,10 @@ Click on any of the projects below to view the live websites:
 * `/03-CSS-Basics` - Introduction to styling.
   * 📄 [CSS Intro Project](https://yusufm-dev-python.github.io/Web-Development/03-CSS-Basics/css_intro.html) (Demonstrating inline, internal, and external CSS methods)
 
+* `/04-CSS-Intermediate` - Advanced styling techniques.
+  * 📄 [CSS Notes & Selectors](https://yusufm-dev-python.github.io/Web-Development/04-CSS-Intermediate/css_notes.html) (Cheat sheet for cascading priorities, specificity, and relative/absolute positioning)
+  * 📄 [Laos Flag Project](https://yusufm-dev-python.github.io/Web-Development/04-CSS-Intermediate/laos_flag.html) (Building complex shapes using absolute positioning and CSS child selectors)
+
 ## 🚀 How to View Locally
 If you want to run these projects on your own machine instead of viewing the live links:
 1. Clone this repository or download the ZIP file.
