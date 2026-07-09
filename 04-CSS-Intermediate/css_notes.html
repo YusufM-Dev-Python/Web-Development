@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Intermediate Notes</title>
+  <style>
+    /* ==========================================
+       1. CASCADING PRIORITIES (Specificity)
+       Rule: The more specific the selector, the higher the priority.
+       Order of Power: !important > Inline > ID > Class > Element
+       ========================================== */
+    
+    h1 { color: black; }          /* Weakest: Element */
+    .title-class { color: blue; } /* Stronger: Class */
+    #title-id { color: red; }     /* Strongest: ID */
+
+    /* ==========================================
+       2. SELECTORS
+       ========================================== */
+    
+    /* Element Selector (Targets all elements of this type) */
+    p { font-family: sans-serif; }
+    
+    /* Class Selector (Targets elements with this class name) */
+    .box { width: 200px; height: 200px; }
+    
+    /* Child Selector (Targets 'p' that is directly inside 'div') */
+    div > p { font-weight: bold; }
+    
+    /* Grouping Selector (Targets both h2 AND h3) */
+    h2, h3 { text-decoration: underline; }
+
+    /* ==========================================
+       3. POSITIONING
+       ========================================== */
+    
+    .relative-parent {
+      /* RELATIVE: Moves element relative to its normal position.
+         Crucially, it acts as an anchor for absolute children! */
+      position: relative; 
+      background-color: lightgray;
+      padding: 20px;
+    }
+
+    .absolute-child {
+      /* ABSOLUTE: Removes element from normal flow. 
+         Positions exactly based on the nearest relative parent. */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title-id" class="title-class">Understanding CSS Priorities</h1>
+
+  <div class="box relative-parent">
+    This is the relative parent container.
+    <div class="absolute-child">I am absolutely positioned!</div>
+  </div>
+
+</body>
+</html>
