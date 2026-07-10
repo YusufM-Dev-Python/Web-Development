@@ -24,6 +24,9 @@ Click on any of the projects below to view the live websites:
   * 📄 [CSS Notes & Selectors](https://yusufm-dev-python.github.io/Web-Development/04-CSS-Intermediate/css_notes.html) (Cheat sheet for cascading priorities, specificity, and relative/absolute positioning)
   * 📄 [Laos Flag Project](https://yusufm-dev-python.github.io/Web-Development/04-CSS-Intermediate/laos_flag.html) (Building complex shapes using absolute positioning and CSS child selectors)
 
+* `/05-CSS-Advanced` - Layout fundamentals and responsiveness.
+  * 📄 [Advanced Layout Notes](https://yusufm-dev-python.github.io/Web-Development/05-CSS-Advanced/advanced_layout_notes.html) (Cheat sheet for Display, Float, and Media Queries)
+
 ## 🚀 How to View Locally
 If you want to run these projects on your own machine instead of viewing the live links:
 1. Clone this repository or download the ZIP file.

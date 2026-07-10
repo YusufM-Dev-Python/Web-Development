@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Layouts</title>
+  <style>
+    /* ==========================================
+       1. DISPLAY PROPERTY
+       ========================================== */
+    .block-box {
+      display: block; /* Takes up the full width */
+      background-color: lightcoral;
+      margin-bottom: 10px;
+    }
+
+    .inline-box {
+      display: inline; /* Only takes up as much width as necessary, ignores height/width */
+      background-color: lightblue;
+    }
+
+    .inline-block-box {
+      display: inline-block; /* Sits inline but respects height/width */
+      width: 150px;
+      background-color: lightgreen;
+    }
+
+    /* ==========================================
+       2. FLOAT PROPERTY
+       Note: Mostly used for wrapping text around images nowadays.
+       ========================================== */
+    .float-box {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin-right: 15px;
+    }
+
+    /* ==========================================
+       3. MEDIA QUERIES (Responsive Design)
+       Rule: Changes the styling based on screen size.
+       ========================================== */
+    .responsive-text {
+      font-size: 20px;
+      color: black;
+    }
+
+    /* If the screen is 600px or smaller, turn the text red */
+    @media (max-width: 600px) {
+      .responsive-text {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Display Property</h2>
+  <div class="block-box">I am a Block element (full width).</div>
+  <div class="inline-box">I am Inline.</div>
+  <div class="inline-box">I am also Inline.</div>
+  <br><br>
+  <div class="inline-block-box">I am Inline-Block.</div>
+  <div class="inline-block-box">I am also Inline-Block.</div>
+
+  <hr>
+
+  <h2>2. Float Property</h2>
+  <div class="float-box"></div>
+  <p>This text will wrap entirely around the floated orange box on the left. This used to be how developers built entire website layouts, but now it is mostly just used for magazine-style text wrapping around images.</p>
+
+  <hr>
+
+  <h2>3. Media Queries</h2>
+  <p class="responsive-text">Resize your browser window! If you make it smaller than 600px wide, this text will turn red.</p>
+
+</body>
+</html>
