@@ -27,6 +27,9 @@ Click on any of the projects below to view the live websites:
 * `/05-CSS-Advanced` - Layout fundamentals and responsiveness.
   * 📄 [Advanced Layout Notes](https://yusufm-dev-python.github.io/Web-Development/05-CSS-Advanced/advanced_layout_notes.html) (Cheat sheet for Display, Float, and Media Queries)
 
+* `/06-CSS-Flexbox` - Mastering flexible layouts.
+  * 📄 [Ultimate Flexbox Guide](https://yusufm-dev-python.github.io/Web-Development/06-CSS-Flexbox/flexbox_full_guide.html) (A complete sandbox project demonstrating all Flexbox properties and child item behavior)
+
 ## 🚀 How to View Locally
 If you want to run these projects on your own machine instead of viewing the live links:
 1. Clone this repository or download the ZIP file.

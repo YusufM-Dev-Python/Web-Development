@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Flexbox Guide</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: #f0f0f0;
+            height: 300px;
+            border: 2px solid #333;
+            /* UNCOMMENT THESE ONE BY ONE TO SEE THE EFFECT */
+            
+            /* 1. DIRECTION */
+            flex-direction: row; /* row, column, row-reverse, column-reverse */
+            
+            /* 2. MAIN AXIS ALIGNMENT (justify-content) */
+            justify-content: flex-start; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+            
+            /* 3. CROSS AXIS ALIGNMENT (align-items) */
+            align-items: stretch; /* stretch, flex-start, flex-end, center, baseline */
+            
+            /* 4. WRAPPING */
+            flex-wrap: wrap; /* nowrap, wrap */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* CHILD PROPERTY EXAMPLE */
+        .box:nth-child(2) {
+            background-color: #f44336;
+            flex-grow: 1; /* This box will grow to fill extra space */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Ultimate Flexbox Sandbox</h1>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2 (Grows)</div>
+        <div class="box">3</div>
+    </div>
+
+    <h3>Detailed Notes for GitHub:</h3>
+    <ul>
+        <li><strong>display: flex;</strong> - Enables Flexbox on the parent container.</li>
+        <li><strong>flex-direction:</strong> - Defines the "Main Axis". <code>row</code> is horizontal, <code>column</code> is vertical.</li>
+        <li><strong>justify-content:</strong> - Controls items along the <strong>Main Axis</strong>. Use <code>space-between</code> to push items to the edges.</li>
+        <li><strong>align-items:</strong> - Controls items along the <strong>Cross Axis</strong>. <code>center</code> is the magic property for perfectly centering items.</li>
+        <li><strong>flex-wrap:</strong> - Prevents your items from getting squished. <code>wrap</code> is essential for mobile-friendly layouts.</li>
+        <li><strong>flex-grow:</strong> - Applied to <em>children</em>. A value of <code>1</code> tells that item to expand and take up all available empty space.</li>
+    </ul>
+
+</body>
+</html>
