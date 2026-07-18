@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate CSS Grid Sandbox</title>
+  <style>
+    /* 
+      1. THE PARENT: GRID CONTAINER 
+    */
+    .grid-container {
+      display: grid;
+      
+      /* TEMPLATES: Defining the tracks */
+      /* repeat(3, 1fr) is a shortcut for: 1fr 1fr 1fr */
+      /* minmax(100px, 1fr) ensures columns never shrink below 100px, but grow equally */
+      grid-template-columns: repeat(3, minmax(100px, 1fr)); 
+      
+      /* auto keyword means the row height adapts to its content */
+      grid-template-rows: 150px auto; 
+      
+      /* GAP: Space between rows and columns (shorthand for row-gap and column-gap) */
+      gap: 20px; 
+      
+      /* AUTO-ROWS: If we add more boxes than our template handles, they default to this height */
+      grid-auto-rows: 100px; 
+      
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* 
+      2. THE CHILDREN: GRID ITEMS 
+    */
+    .box {
+      /* Using Flexbox here strictly to center the emojis inside the grid items */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Distinct colors */
+    .box1 { background-color: #ff595e; }
+    .box2 { background-color: #ffca3a; }
+    .box3 { background-color: #8ac926; }
+    .box4 { background-color: #1982c4; }
+    .box5 { background-color: #6a4c93; }
+    .box6 { background-color: #ff924c; }
+
+    /* 
+      MANUAL PLACEMENT & SPANNING 
+    */
+    
+    .box1 {
+      /* Manual start and end. (A 3-column grid has 4 lines). 
+         This starts at line 1 and ends at line 3 (taking up 2 columns). */
+      grid-column-start: 1;
+      grid-column-end: 3; 
+    }
+
+    .box2 {
+      /* The SPAN shortcut. Starts at row line 1, spans across 2 rows. */
+      grid-row: 1 / span 2; 
+    }
+
+    .box3 {
+      /* ORDER: Visually pushes this box to the end, regardless of HTML structure */
+      order: 10; 
+    }
+
+    .box5 {
+      /* GRID-AREA Shorthand: row-start / col-start / row-end / col-end */
+      /* Starts at row 3, col 1. Ends at row 4, col 3. */
+      grid-area: 3 / 1 / 4 / 3; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Grid: The 2D Layout Engine</h1>
+  
+  <div class="grid-container">
+    <div class="box box1">🍎</div>
+    <div class="box box2">🍌</div>
+    <div class="box box3">🍉</div>
+    <div class="box box4">🍇</div>
+    <div class="box box5">🍍</div>
+    <div class="box box6">🥝</div>
+  </div>
+
+  <h2>Grid Property Cheat Sheet</h2>
+  <ul>
+    <li><strong>grid-template-columns / rows:</strong> Establishes the layout. Use <code>fr</code> (fractional units) to divide free space.</li>
+    <li><strong>repeat(count, size):</strong> Keeps CSS dry. <code>repeat(4, 1fr)</code> creates 4 equal columns.</li>
+    <li><strong>minmax(min, max):</strong> Creates responsive boundaries without media queries.</li>
+    <li><strong>auto:</strong> Sizing behaves like standard block elements—dictated by the content inside.</li>
+    <li><strong>grid-auto-rows / columns:</strong> The safety net. It sizes implicit grid items (items created outside your defined template).</li>
+    <li><strong>gap:</strong> Pure spacing between items. Replaces hacky margin math.</li>
+    <li><strong>grid-column / grid-row:</strong> Shorthand to place items using grid lines. Format is <code>start / end</code>.</li>
+    <li><strong>span:</strong> Used inside placement to stretch across tracks (e.g., <code>span 3</code>).</li>
+    <li><strong>grid-area:</strong> The master shorthand for manual placement: <code>row-start / column-start / row-end / column-end</code>.</li>
+    <li><strong>order:</strong> Moves items visually. Lower numbers appear first.</li>
+  </ul>
+
+</body>
+</html>
