@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now);
+    }
+
+    const changeColor = function(){
+        letters = "0123456789ABCDEFG"
+        let color = "#"
+        for(let i=0; i<6; i++){
+            color += letters[i]
+        }
+    }
+
+    const intervalId = setInterval(sayDate, 1000, "Yo")
+
+    clearInterval(intervalId)
+
+    document.querySelector('#start').addEventListener('click', function(){
+        const intervalId = setInterval(() =>{
+            document.style.backgroundColor = changeColor()
+        }, 1000)
+    })
+</script>
+</html>
+
+
+
