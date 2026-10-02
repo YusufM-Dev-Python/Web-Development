@@ -31,6 +31,11 @@ Click on any of the projects below to view the live websites:
   * 📄 [Ultimate Flexbox Guide](https://yusufm-dev-python.github.io/Web-Development/06-CSS-Flexbox/flexbox_full_guide.html) (A complete sandbox project demonstrating all Flexbox properties and child item behavior)
   * 📄 [Flexbox Pricing Table](https://yusufm-dev-python.github.io/Web-Development/06-CSS-Flexbox/pricing_table.html) (A responsive pricing component built with Flexbox, media queries, and semantic HTML)
 
+* `08-Javascript` - JavaScript syntax and code-along notes with comments.
+
+* `GithubFinder-Project` - Search GitHub profiles dynamically.
+  * 📄 [GitHub Finder Project](https://yusufm-dev-python.github.io/web-Development/GithubFinder-Project/githubFinder.html) (Search GitHub profiles dynamically using the GitHub API)
+
 ## 🚀 How to View Locally
 If you want to run these projects on your own machine instead of viewing the live links:
 1. Clone this repository or download the ZIP file.
