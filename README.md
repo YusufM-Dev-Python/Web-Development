@@ -34,7 +34,7 @@ Click on any of the projects below to view the live websites:
 * `08-Javascript` - JavaScript syntax and code-along notes with comments.
 
 * `GithubFinder-Project` - Search GitHub profiles dynamically.
-  * 📄 [GitHub Finder Project](https://yusufm-dev-python.github.io/web-Development/GithubFinder-Project/githubFinder.html) (Search GitHub profiles dynamically using the GitHub API)
+  * 📄 [GitHub Finder Project](https://yusufm-dev-python.github.io/Web-Development/GithubFinder-Project/githubFinder.html) (Search GitHub profiles dynamically using the GitHub API)
 
 ## 🚀 How to View Locally
 If you want to run these projects on your own machine instead of viewing the live links:
