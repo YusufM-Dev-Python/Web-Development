@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;  
+}
+
+.container{
+    text-align: center;
+}
+
+.search-box{
+    margin-top: 20px;
+}
+
+#searchInput, #searchBtn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#searchBtn {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cardContainer img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
