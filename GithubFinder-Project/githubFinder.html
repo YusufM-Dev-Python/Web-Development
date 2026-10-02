@@ -35,9 +35,12 @@
                             if(xhr.readyState == 4 && xhr.status == 200){
                                 const data = JSON.parse(this.responseText)
                                 const myPhoto = document.querySelector("#cardContainer")
-                                myPhoto.innerHTML =
-                                    `<img src="${data.avatar_url}" alt="Github profile picture" width=150px>`
-                                console.log(data)
+                                myPhoto.innerHTML = `
+                                    <img src="${data.avatar_url}" alt="Github profle picture">
+                                    <h2>${data.name || data.login}</h2>
+                                    <p>${data.bio || "no bio availaible"}</p>
+                                    <p>Followers = ${data.followers} | Repos:${data.public_repos}</p>
+                                    <a href="${data.html_url}" target="_blank">Visit GitHub Profile</a>`;
                             }
                         };
                     xhr.send();
